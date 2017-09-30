@@ -1,6 +1,7 @@
 package video.xdownloader;
 
 import android.app.Application;
+import android.os.AsyncTask;
 
 import com.google.android.exoplayer2.upstream.DataSource;
 import com.google.android.exoplayer2.upstream.DefaultBandwidthMeter;

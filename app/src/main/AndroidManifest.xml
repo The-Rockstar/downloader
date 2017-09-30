@@ -77,8 +77,7 @@
             android:configChanges="orientation|screenSize" />
         <activity
             android:name=".ui.dialog.LikedPageVideos"
-
-            android:configChanges="orientation|screenSize"></activity>
+            android:configChanges="orientation|screenSize" />
         <activity
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:name=".utils.player.PlayerActivity"
@@ -96,29 +95,6 @@
             <!--</intent-filter>-->
         </activity>
 
-
-        <activity
-            android:name=".extractor.xpress.DownloadActivity"
-            android:theme="@android:style/Theme.Holo.Light.Dialog"
-            android:excludeFromRecents="true"
-            android:taskAffinity="">
-
-            <intent-filter>
-                <action android:name="android.intent.action.SEND" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <data android:mimeType="text/plain" />
-            </intent-filter>
-
-        </activity>
-
-        <receiver
-            android:name=".extractor.xpress.DownloadFinishedReceiver"
-            android:exported="true"
-            android:process=".dlFinished">
-            <intent-filter>
-                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
-            </intent-filter>
-        </receiver>
 
     </application>
 

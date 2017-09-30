@@ -19,13 +19,13 @@ import video.xdownloader.BuildConfig;
 /**
  * Created by jaswinderwadali on 23/08/16.
  */
-public class RestAdapter {
+public class RestAdapter2 {
 
     OkHttpClient okClient;
-    private static RestAdapter restAdapter;
+    private static RestAdapter2 restAdapter;
     private ApiServices apiService;
 
-    private RestAdapter(final ProgressListener progressListener) {
+    private RestAdapter2(final ProgressListener progressListener) {
 
         okClient = new OkHttpClient.Builder()
                 .addNetworkInterceptor(new Interceptor() {
@@ -50,13 +50,13 @@ public class RestAdapter {
 
     }
 
-    public static RestAdapter getInstance(ProgressListener progressListener) {
+    public static RestAdapter2 getInstance(ProgressListener progressListener) {
         if (restAdapter == null)
-            restAdapter = new RestAdapter(progressListener);
+            restAdapter = new RestAdapter2(progressListener);
         return restAdapter;
     }
 
-    public static RestAdapter getInstance() {
+    public static RestAdapter2 getInstance() {
         return getInstance(null);
     }
 

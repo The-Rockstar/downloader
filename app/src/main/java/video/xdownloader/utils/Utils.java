@@ -71,7 +71,6 @@ public class Utils {
 //                .build();
 //        return findViewAndSetController(viewId, animatedController, centerCrop);
 //    }
-//
 
     public static <T> void findViewAndLoadAnimatedImageUri(ImageView imageView, T uri, boolean centerCrop) {
         if (imageView != null) {
@@ -79,13 +78,13 @@ public class Utils {
                 RequestManager into = Glide.with(imageView.getContext());
                 if (centerCrop) {
                     into.load(uri).priority(IMMEDIATE)
-                            .placeholder(R.drawable.thor).diskCacheStrategy(DiskCacheStrategy.SOURCE)
+                            .placeholder(android.R.color.transparent).diskCacheStrategy(DiskCacheStrategy.SOURCE)
                             .crossFade().skipMemoryCache(false)
                             .into(imageView);
 
                 } else {
                     into.load(uri).fitCenter().priority(IMMEDIATE)
-                            .placeholder(R.drawable.thor).diskCacheStrategy(DiskCacheStrategy.SOURCE)
+                            .placeholder(android.R.color.transparent).diskCacheStrategy(DiskCacheStrategy.SOURCE)
                             .crossFade().skipMemoryCache(false)
                             .into(imageView);
                 }

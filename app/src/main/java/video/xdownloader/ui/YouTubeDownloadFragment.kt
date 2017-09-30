@@ -13,7 +13,7 @@ import android.widget.EditText
 import android.widget.Toast
 
 import video.xdownloader.R
-import video.xdownloader.extractor.xpress.DownloadActivity
+//import video.xdownloader.extractor.xpress.DownloadActivity
 
 /**
  * A simple [Fragment] subclass.
@@ -59,19 +59,19 @@ class YouTubeDownloadFragment : Fragment() {
     override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         editText = view!!.findViewById<EditText>(R.id.edittext);
-        val button = view.findViewById<Button>(R.id.download_btn);
+        val button = view.findViewById<Button>(R.id.search_btn);
         button.setOnClickListener(object : View.OnClickListener {
             override fun onClick(xpView: View?) {
 
-                val intent = Intent(context, DownloadActivity::class.java)
-                intent.setAction(Intent.ACTION_SEND)
-                intent.setType("text/plain")
-                intent.putExtra(Intent.EXTRA_TEXT, editText!!.text.toString())
-                val text = editText!!.text.toString();
-                if (text.isNotEmpty())
-                    startActivity(intent)
-                else
-                    Toast.makeText(context, "please enter your", Toast.LENGTH_LONG).show();
+//                val intent = Intent(context, DownloadActivity::class.java)
+//                intent.setAction(Intent.ACTION_SEND)
+//                intent.setType("text/plain")
+//                intent.putExtra(Intent.EXTRA_TEXT, editText!!.text.toString())
+//                val text = editText!!.text.toString();
+//                if (text.isNotEmpty())
+//                    startActivity(intent)
+//                else
+//                    Toast.makeText(context, "please enter your", Toast.LENGTH_LONG).show();
             }
         })
 

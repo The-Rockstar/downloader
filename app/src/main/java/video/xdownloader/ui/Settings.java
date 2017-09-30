@@ -3,6 +3,7 @@ package video.xdownloader.ui;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -12,7 +13,11 @@ import android.view.ViewGroup;
 
 import com.facebook.login.LoginManager;
 
+import java.util.Locale;
+
+import video.xdownloader.BuildConfig;
 import video.xdownloader.R;
+import video.xdownloader.ui.dialog.Credites;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -80,10 +85,50 @@ public class Settings extends Fragment {
             @Override
             public void onClick(View v) {
                 LoginManager.getInstance().logOut();
-                startActivity(new Intent(getActivity(),LoginActivity.class));
+                startActivity(new Intent(getActivity(), LoginActivity.class));
                 getActivity().finish();
             }
         });
+        view.findViewById(R.id.feedback).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "hello.corejava@gmail.com", null));
+                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Feedback ");
+                emailIntent.putExtra(Intent.EXTRA_TEXT, "Hi, ");
+                getContext().startActivity(Intent.createChooser(emailIntent, "Send email..."));
+
+            }
+        });
+
+        view.findViewById(R.id.submit_yourpage).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "hello.corejava@gmail.com", null));
+                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Submit Page");
+                emailIntent.putExtra(Intent.EXTRA_TEXT, "Hi, Please add my page \n page name : \t \nPage Id or link : ");
+                getContext().startActivity(Intent.createChooser(emailIntent, "Send email..."));
+
+            }
+        });
+
+
+        view.findViewById(R.id.about_us).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent browserIntent = new Intent("android.intent.action.VIEW", Uri.parse("https://twitter.com/jaswinderwadali"));
+                startActivity(browserIntent);
+            }
+        });
+
+
+        view.findViewById(R.id.credits).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Credites.build(getFragmentManager(),"null");
+            }
+        });
+
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -109,8 +154,6 @@ public class Settings extends Fragment {
         super.onDetach();
         mListener = null;
     }
-
-
 
 
     /**

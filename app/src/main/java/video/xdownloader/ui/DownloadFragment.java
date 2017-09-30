@@ -130,7 +130,7 @@ public class DownloadFragment extends Fragment {
         mProgressText = (JTextView) view.findViewById(R.id.textViewD);
         imageView = (ImageView) view.findViewById(R.id.image_view);
         linearLayout = (LinearLayout) view.findViewById(R.id.mainLayout);
-
+        refresh();
     }
 
     /**
@@ -191,6 +191,7 @@ public class DownloadFragment extends Fragment {
 
                 mProgressBar.setProgress(download.getProgress());
                 if (download.getProgress() == 100) {
+                    refresh();
                     linearLayout.setVisibility(View.GONE);
                     mProgressText.setText("File Download Complete");
                 } else {

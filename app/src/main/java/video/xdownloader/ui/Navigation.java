@@ -29,13 +29,13 @@ public class Navigation extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-                    viewPager.setCurrentItem(0, true);
-                    return true;
-                case R.id.navigation_dashboard:
                     viewPager.setCurrentItem(1, true);
                     return true;
-                case R.id.utube:
+                case R.id.navigation_dashboard:
                     viewPager.setCurrentItem(2, true);
+                    return true;
+                case R.id.utube:
+                    viewPager.setCurrentItem(0, true);
                     return true;
                 case R.id.navigation_notifications:
                     viewPager.setCurrentItem(3, true);
@@ -104,7 +104,6 @@ public class Navigation extends AppCompatActivity {
                 navigation.getMenu().getItem(position).setChecked(true);
 
 
-
 //                if (position == 0)
 //                    navigation.setSelectedItemId(R.id.navigation_home);
 //                else if (position == 1)
@@ -117,9 +116,9 @@ public class Navigation extends AppCompatActivity {
 
             @Override
             public void onPageSelected(int position) {
-                if (position == 1) {
-                    navigateAdapter.refresh();
-                }
+//                if (position == 2) {
+//                    navigateAdapter.refresh();
+//                }
             }
 
             @Override
@@ -140,7 +139,7 @@ public class Navigation extends AppCompatActivity {
 
     static class NavigateAdapter extends FragmentStatePagerAdapter {
 
-        private DownloadFragment downloadFragment;
+//        private DownloadFragment downloadFragment;
 
         public NavigateAdapter(FragmentManager fm) {
             super(fm);
@@ -150,11 +149,11 @@ public class Navigation extends AppCompatActivity {
         public Fragment getItem(int position) {
             switch (position) {
                 case 0:
-                    return new MainClassFragment();
+                    return new ImageFragment();
                 case 1:
-                    return new DownloadFragment();
+                    return new MainClassFragment();
                 case 2:
-                    return new YouTubeDownloadFragment();
+                    return new DownloadFragment();
                 case 3:
                     return new Settings();
                 default:
@@ -167,16 +166,16 @@ public class Navigation extends AppCompatActivity {
         public Object instantiateItem(ViewGroup container, int position) {
             Fragment createdFragment = (Fragment) super.instantiateItem(container, position);
             // save the appropriate reference depending on position
-            switch (position) {
-                case 1:
-                    downloadFragment = (DownloadFragment) createdFragment;
-            }
+//            switch (position) {
+//                case 2:
+//                    downloadFragment = (DownloadFragment) createdFragment;
+//            }
             return createdFragment;
         }
 
-        public void refresh() {
-            downloadFragment.refresh();
-        }
+//        public void refresh() {
+//            downloadFragment.refresh();
+//        }
 
         @Override
         public int getCount() {

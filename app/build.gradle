@@ -17,22 +17,22 @@ android {
     productFlavors {
         development {
             applicationId "video.xdownloader.dev"
-            buildConfigField 'String', 'HOST', '"https://google.com"'
-            resValue "string", "app_name", "Download Now Dev"
+            buildConfigField 'String', 'HOST', '"https://pixabay.com/"'
+            resValue "string", "app_name", "Lucy Dev"
             buildConfigField 'Boolean', 'ISPROD', 'false'
-            versionCode 2
-            versionName "1.0.0"
+            versionCode 9
+            versionName "1.0.3"
             dimension "color"
 
         }
 
         production {
             applicationId "video.xdownloader"
-            buildConfigField 'String', 'HOST', '"https://google.com"'
-            resValue "string", "app_name", "Download Now"
+            buildConfigField 'String', 'HOST', '"https://pixabay.com/"'
+            resValue "string", "app_name", "Lucy"
             buildConfigField 'Boolean', 'ISPROD', 'true'
-            versionCode 2
-            versionName "1.0.0"
+            versionCode 9
+            versionName "1.0.3"
             dimension "color"
 
         }
@@ -81,7 +81,6 @@ dependencies {
     compile 'com.google.firebase:firebase-messaging:11.2.0'
     compile 'org.aspectj:aspectjrt:1.8.8'
     compile 'com.googlecode.mp4parser:isoparser:1.1.17'
-
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 }
 apply plugin: 'com.google.gms.google-services'
