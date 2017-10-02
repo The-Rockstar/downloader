@@ -116,7 +116,7 @@ public class GenericFragment extends Fragment {
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
-                        Log.d("response", response.getRawResponse());
+//                        Log.d("response", response.getRawResponse());
 
                     }
                 });

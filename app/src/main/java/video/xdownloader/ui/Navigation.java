@@ -132,7 +132,7 @@ public class Navigation extends AppCompatActivity {
         navigation = findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.content, new MainClassFragment()).commit();
+        fragmentManager.beginTransaction().replace(R.id.content, new MainClassFragment()).commitAllowingStateLoss();
 
     }
 

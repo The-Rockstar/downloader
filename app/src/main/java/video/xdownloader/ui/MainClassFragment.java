@@ -54,6 +54,7 @@ public class MainClassFragment extends Fragment {
     }
 
 
+
     public static MainClassFragment newInstance(String param1, String param2) {
         MainClassFragment fragment = new MainClassFragment();
         Bundle args = new Bundle();
