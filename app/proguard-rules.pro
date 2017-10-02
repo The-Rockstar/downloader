@@ -17,6 +17,10 @@
 }
 
 
+-keepclassmembers class android.support.design.internal.BottomNavigationMenuView {
+    boolean mShiftingMode;
+}
+
 #-keep public class botsdk.touchkin.core.Touchkin { *; }
 #-keep public class botsdk.touchkin.core.Touchkin$TYPE { *; }
 #-keep public class botsdk.touchkin.core.Touchkin$BaseProperty { *; }
