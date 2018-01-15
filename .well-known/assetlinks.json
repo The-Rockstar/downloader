@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "video.xdownloader",
+    "sha256_cert_fingerprints":
+    ["92:12:1E:2A:4C:50:43:A7:CF:D9:61:66:5B:87:69:2C:0A:6E:06:A1:98:5B:94:8F:86:E2:09:A7:6F:49:B3:2B"]
+  }
+}]
