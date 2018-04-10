@@ -10,8 +10,8 @@ android {
         minSdkVersion 21
         targetSdkVersion 27
         vectorDrawables.useSupportLibrary = true
-        versionCode 18
-        versionName "1.0.12"
+        versionCode 19
+        versionName "1.1.0"
         multiDexEnabled true
         buildConfigField 'String', 'HOST', '"https://us-central1-xdownloader-89b0f.cloudfunctions.net"'
         resValue "string", "app_name", "RuZoo dev"

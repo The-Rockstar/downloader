@@ -23,6 +23,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
             <intent-filter
                 android:autoVerify="true"
                 tools:targetApi="m">
