@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="App" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <item name="android:colorAccent">@color/accent</item>
+    </style>
+
+    <style name="App.Detail">
+        <item name="android:windowSharedElementEnterTransition">
+            @transition/shared_main_detail
+        </item>
+    </style>
+
+    <style name="App.Home">
+        <item name="android:windowExitTransition">@transition/grid_exit</item>
+        <item name="android:windowReenterTransition">@transition/grid_reenter</item>
+    </style>
+</resources>

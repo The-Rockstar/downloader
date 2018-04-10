@@ -1,0 +1,62 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="lorum_ipsum">Artisan pickled freegan keytar High Life, roof party slow-carb Thundercats post-ironic. Bespoke sriracha taxidermy skateboard, yr PBRB jean shorts keytar post-ironic direct trade Banksy locavore selvage Vice four dollar toast. Wolf cardigan ugh gastropub. Pinterest Williamsburg Echo Park before they sold out tattooed. Tousled sriracha narwhal sustainable. Kale chips four dollar toast mumblecore gastropub Thundercats Brooklyn High Life, messenger bag tofu actually. Freegan drinking vinegar pug selfies gentrify.\n\nPolaroid photo booth Wes Anderson, wolf plaid tilde lo-fi. Godard Wes Anderson PBRB normcore. Pop-up mustache meh, wayfarers yr Odd Future food truck skateboard. Sriracha meggings next level VHS, gluten-free chia lumbersexual messenger bag art party Thundercats listicle. Pour-over heirloom cornhole direct trade fingerstache, disrupt Thundercats next level semiotics Banksy listicle narwhal Odd Future pork belly fixie. Squid Intelligentsia Bushwick disrupt direct trade +1, artisan photo booth meditation forage you probably haven\'t heard of them cray. Salvia lo-fi scenester banh mi, Schlitz irony vegan XOXO fashion axe street art bicycle rights keytar polaroid disrupt farm-to-table.\n\nForage Thundercats vegan, whatever synth tote bag lomo wayfarers locavore drinking vinegar Odd Future YOLO you probably haven\'t heard of them PBR. Shabby chic hella hoodie, lumbersexual keytar iPhone viral Vice gentrify seitan. You probably haven\'t heard of them asymmetrical flannel, Pinterest fanny pack Wes Anderson readymade typewriter post-ironic single-origin coffee Shoreditch biodiesel leggings. Twee mumblecore lo-fi, synth lomo gluten-free McSweeney\'s Pitchfork gastropub American Apparel. Gluten-free small batch tilde PBR occupy. Fashion axe yr meh, gentrify lo-fi chambray lomo drinking vinegar fap salvia irony tilde health goth trust fund. Authentic Intelligentsia YOLO, Blue Bottle McSweeney\'s yr fashion axe butcher Williamsburg.\n\nSustainable actually fashion axe slow-carb, whatever Intelligentsia sartorial PBRB bespoke 90\'s cold-pressed. Disrupt slow-carb church-key, Banksy four loko hashtag sartorial tote bag. Gastropub banh mi twee, four loko kogi distillery plaid yr. Fixie Neutra chillwave bicycle rights, readymade art party 90\'s Bushwick salvia pickled McSweeney\'s. XOXO gastropub tote bag, meggings Pinterest locavore roof party. Try-hard before they sold out mlkshk wayfarers pop-up Truffaut. Asymmetrical actually fixie, sartorial raw denim brunch mixtape.</string>
+    <string name="transition_photo">transition_photo%1$d</string>
+    <string name="transition_author">transition_author%1$d</string>
+    <string name="error_no_yt_link">Not a valid YouTube link!</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Downloads</string>
+    <string name="title_notifications">Tools</string>
+
+    <string name="facebook_app_id">641087642686511</string>
+    <string name="fb_login_protocol_scheme">fb641087642686511</string>
+
+    <string name="logout">Logout</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="title_activity_video_list">VideoListActivity</string>
+    <string name="application_name">ExoPlayer</string>
+
+    <string name="video">Video</string>
+
+    <string name="audio">Audio</string>
+
+    <string name="text">Text</string>
+
+    <string name="retry">Retry</string>
+
+    <string name="selection_disabled">Disabled</string>
+
+    <string name="selection_default">Default</string>
+
+    <string name="unexpected_intent_action">Unexpected intent action: <xliff:g id="action">%1$s</xliff:g></string>
+
+    <string name="enable_random_adaptation">Enable random adaptation</string>
+
+    <string name="error_drm_not_supported">Protected content not supported on API levels below 18</string>
+
+    <string name="error_drm_unsupported_scheme">This device does not support the required DRM scheme</string>
+
+    <string name="error_drm_unknown">An unknown DRM error occurred</string>
+
+    <string name="error_no_decoder">This device does not provide a decoder for <xliff:g id="mime_type">%1$s</xliff:g></string>
+
+    <string name="error_no_secure_decoder">This device does not provide a secure decoder for <xliff:g id="mime_type">%1$s</xliff:g></string>
+
+    <string name="error_querying_decoders">Unable to query device decoders</string>
+
+    <string name="error_instantiating_decoder">Unable to instantiate decoder <xliff:g id="decoder_name">%1$s</xliff:g></string>
+
+    <string name="error_unsupported_video">Media includes video tracks, but none are playable by this device</string>
+
+    <string name="error_unsupported_audio">Media includes audio tracks, but none are playable by this device</string>
+
+    <string name="storage_permission_denied">Permission to access storage was denied</string>
+
+    <string name="sample_list_load_error">One or more sample lists failed to load</string>
+
+    <string name="ima_not_loaded">Playing sample without ads, as the IMA extension was not loaded</string>
+    <string name="app_update">Update</string>
+    <string name="hello_blank_fragment">hello</string>
+    <string name="asset_statements" translatable="false">[{\n  \"relation\": [\"delegate_permission/common.handle_all_urls\"],\n  \"target\": {\n    \"namespace\": \"web\",\n    \"site\": \"https://d5rwdr23d4fqx.cloudfront.net\",\n  }\n}]</string>
+
+</resources>
